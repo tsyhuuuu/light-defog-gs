@@ -1,0 +1,60 @@
+2025-09-18 12:53:14,727 - experiment_fog_classification_neighborhood_features - INFO - Experiment 'fog_classification_neighborhood_features' initialized
+2025-09-18 12:53:14,727 - experiment_fog_classification_neighborhood_features - INFO - Experiment directory: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314
+2025-09-18 12:53:14,727 - experiment_fog_classification_neighborhood_features - INFO - 🚀 Starting Multi-Dataset Fog Gaussian Classification Experiment
+2025-09-18 12:53:14,727 - experiment_fog_classification_neighborhood_features - INFO - ============================================================
+2025-09-18 12:53:14,727 - experiment_fog_classification_neighborhood_features - INFO - DATASET PREPARATION
+2025-09-18 12:53:14,727 - experiment_fog_classification_neighborhood_features - INFO - ============================================================
+2025-09-18 12:55:24,505 - experiment_fog_classification_neighborhood_features - INFO - Dataset info logged: 244 datasets
+2025-09-18 12:55:27,076 - experiment_fog_classification_neighborhood_features - INFO - Feature selection mode: categories
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - INFO - Added 7 features from category 'basic'
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - INFO - Added 11 features from category 'neighborhood'
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - INFO - Added 3 features from category 'geometric'
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - INFO - Using category-based selection: 21 features from 3 categories
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - WARNING - Missing features (will be skipped): ['radius_0.2_mean_opacity', 'radius_0.2_mean_distance']
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - INFO - Feature validation: 19 valid, 2 missing
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - INFO - Selected 19 features: ['f_dc_0', 'f_dc_1', 'f_dc_2', 'scale_x', 'scale_y', 'scale_z', 'opacity', 'knn_10_mean_distance', 'knn_10_std_distance', 'knn_10_max_distance']...
+2025-09-18 12:55:27,077 - experiment_fog_classification_neighborhood_features - INFO - Feature selection info saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/results/feature_selection_info.json
+2025-09-18 12:55:28,211 - experiment_fog_classification_neighborhood_features - INFO - ============================================================
+2025-09-18 12:55:28,211 - experiment_fog_classification_neighborhood_features - INFO - LIGHTGBM CLASSIFICATION
+2025-09-18 12:55:28,212 - experiment_fog_classification_neighborhood_features - INFO - ============================================================
+2025-09-18 12:55:28,212 - experiment_fog_classification_neighborhood_features - INFO - Started training LightGBM
+2025-09-18 12:55:28,212 - experiment_fog_classification_neighborhood_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=-1, num_leaves=31
+2025-09-18 12:57:52,300 - experiment_fog_classification_neighborhood_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=10, num_leaves=63
+2025-09-18 13:02:47,516 - experiment_fog_classification_neighborhood_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=20, num_leaves=127
+2025-09-18 13:10:02,144 - experiment_fog_classification_neighborhood_features - INFO - Best LightGBM parameters: {'n_estimators': 200, 'learning_rate': 0.1, 'max_depth': 10, 'num_leaves': 63}
+2025-09-18 13:10:02,144 - experiment_fog_classification_neighborhood_features - INFO - Best CV score: 0.9969
+2025-09-18 13:11:55,373 - experiment_fog_classification_neighborhood_features - INFO - Model LightGBM evaluated - Accuracy: 0.9973, F1: 0.8959, AUC: 0.9990401310868944
+2025-09-18 13:12:00,314 - experiment_fog_classification_neighborhood_features - INFO - Model LightGBM evaluated - Accuracy: 0.9972, F1: 0.8928, AUC: 0.9989585382925793
+2025-09-18 13:12:10,409 - experiment_fog_classification_neighborhood_features - INFO - Model LightGBM evaluated - Accuracy: 0.9971, F1: 0.8918, AUC: 0.998939983169648
+2025-09-18 13:12:11,883 - experiment_fog_classification_neighborhood_features - INFO - Confusion matrix plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/LightGBM_confusion_matrix.png
+2025-09-18 13:12:14,521 - experiment_fog_classification_neighborhood_features - INFO - ROC curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/LightGBM_roc_curve.png
+2025-09-18 13:12:18,366 - experiment_fog_classification_neighborhood_features - INFO - PR curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/LightGBM_pr_curve.png
+2025-09-18 13:12:18,371 - experiment_fog_classification_neighborhood_features - INFO - Model LightGBM saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/models/LightGBM_model.pkl
+2025-09-18 13:12:18,371 - experiment_fog_classification_neighborhood_features - INFO - Finished training LightGBM
+2025-09-18 13:12:18,372 - experiment_fog_classification_neighborhood_features - INFO - ============================================================
+2025-09-18 13:12:18,372 - experiment_fog_classification_neighborhood_features - INFO - DEEP LEARNING CLASSIFICATION
+2025-09-18 13:12:18,372 - experiment_fog_classification_neighborhood_features - INFO - ============================================================
+2025-09-18 13:12:19,449 - experiment_fog_classification_neighborhood_features - INFO - Training DL_MLP...
+2025-09-18 13:12:19,449 - experiment_fog_classification_neighborhood_features - INFO - Started training DL_MLP
+2025-09-18 21:18:57,724 - experiment_fog_classification_neighborhood_features - INFO - Model DL_MLP evaluated - Accuracy: 0.9960, F1: 0.8487, AUC: 0.49948978363721824
+2025-09-18 21:19:55,013 - experiment_fog_classification_neighborhood_features - INFO - Model DL_MLP evaluated - Accuracy: 0.9960, F1: 0.8480, AUC: 0.9974496337505022
+2025-09-18 21:19:57,970 - experiment_fog_classification_neighborhood_features - INFO - Confusion matrix plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/DL_MLP_confusion_matrix.png
+2025-09-18 21:20:02,631 - experiment_fog_classification_neighborhood_features - INFO - ROC curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/DL_MLP_roc_curve.png
+2025-09-18 21:20:05,333 - experiment_fog_classification_neighborhood_features - INFO - PR curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/DL_MLP_pr_curve.png
+2025-09-18 21:20:05,575 - experiment_fog_classification_neighborhood_features - INFO - Training history plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/DL_MLP_training_history.png
+2025-09-18 21:20:05,585 - experiment_fog_classification_neighborhood_features - INFO - Model DL_MLP saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/models/DL_MLP_model.pkl
+2025-09-18 21:20:05,585 - experiment_fog_classification_neighborhood_features - INFO - Finished training DL_MLP
+2025-09-18 21:20:05,585 - experiment_fog_classification_neighborhood_features - INFO - Training DL_TRANSFORMER...
+2025-09-18 21:20:05,585 - experiment_fog_classification_neighborhood_features - INFO - Started training DL_TRANSFORMER
+2025-09-18 21:20:07,333 - experiment_fog_classification_neighborhood_features - ERROR - DL_TRANSFORMER training failed: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2025-09-18 21:20:07,526 - experiment_fog_classification_neighborhood_features - INFO - Results saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/results/results_summary.csv
+2025-09-18 21:20:07,701 - experiment_fog_classification_neighborhood_features - INFO - Model comparison plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/model_comparison_accuracy.png
+2025-09-18 21:20:07,858 - experiment_fog_classification_neighborhood_features - INFO - Model comparison plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/model_comparison_f1.png
+2025-09-18 21:20:08,044 - experiment_fog_classification_neighborhood_features - INFO - Model comparison plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314/plots/model_comparison_auc.png
+2025-09-18 21:20:08,045 - experiment_fog_classification_neighborhood_features - ERROR - Failed to create experiment report: Invalid format specifier
+2025-09-18 21:20:08,045 - experiment_fog_classification_neighborhood_features - INFO - Experiment 'fog_classification_neighborhood_features' finalized
+2025-09-18 21:20:08,045 - experiment_fog_classification_neighborhood_features - INFO - Results available in: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_neighborhood_features_20250918_125314

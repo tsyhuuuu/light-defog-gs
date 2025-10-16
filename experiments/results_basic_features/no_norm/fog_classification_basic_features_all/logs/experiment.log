@@ -1,0 +1,114 @@
+2025-10-07 11:24:17,717 - experiment_fog_classification_basic_features - INFO - Experiment 'fog_classification_basic_features' initialized
+2025-10-07 11:24:17,717 - experiment_fog_classification_basic_features - INFO - Experiment directory: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417
+2025-10-07 11:24:17,717 - experiment_fog_classification_basic_features - INFO - 🚀 Starting Multi-Dataset Fog Gaussian Classification Experiment
+2025-10-07 11:24:17,717 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-10-07 11:24:17,717 - experiment_fog_classification_basic_features - INFO - DATASET PREPARATION
+2025-10-07 11:24:17,717 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-10-07 11:26:39,296 - experiment_fog_classification_basic_features - INFO - Dataset info logged: 244 datasets
+2025-10-07 11:26:39,760 - experiment_fog_classification_basic_features - INFO - Feature selection mode: manual
+2025-10-07 11:26:39,761 - experiment_fog_classification_basic_features - INFO - Using manual feature selection: 7 features specified
+2025-10-07 11:26:39,761 - experiment_fog_classification_basic_features - INFO - Feature validation: 7 valid, 0 missing
+2025-10-07 11:26:39,761 - experiment_fog_classification_basic_features - INFO - Selected 7 features: ['f_dc_0', 'f_dc_1', 'f_dc_2', 'scale_x', 'scale_y', 'scale_z', 'opacity']...
+2025-10-07 11:26:39,761 - experiment_fog_classification_basic_features - INFO - Feature selection info saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/results/feature_selection_info.json
+2025-10-07 11:26:40,536 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-10-07 11:26:40,537 - experiment_fog_classification_basic_features - INFO - LIGHTGBM CLASSIFICATION
+2025-10-07 11:26:40,537 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-10-07 11:26:40,537 - experiment_fog_classification_basic_features - INFO - Started training LightGBM
+2025-10-07 11:26:40,537 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=-1, num_leaves=31
+2025-10-07 11:32:14,197 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=-1, num_leaves=63
+2025-10-07 11:39:15,756 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=-1, num_leaves=127
+2025-10-07 11:49:26,248 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=10, num_leaves=31
+2025-10-07 11:54:51,966 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=10, num_leaves=63
+2025-10-07 12:01:34,467 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=10, num_leaves=127
+2025-10-07 12:11:24,477 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=20, num_leaves=31
+2025-10-07 12:16:52,589 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=20, num_leaves=63
+2025-10-07 12:23:50,312 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=20, num_leaves=127
+2025-10-07 12:34:16,912 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=-1, num_leaves=31
+2025-10-07 12:39:30,207 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=-1, num_leaves=63
+2025-10-07 12:45:58,984 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=-1, num_leaves=127
+2025-10-07 12:56:04,374 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=10, num_leaves=31
+2025-10-07 13:01:00,875 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=10, num_leaves=63
+2025-10-07 13:07:08,568 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=10, num_leaves=127
+2025-10-07 13:17:20,674 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=20, num_leaves=31
+2025-10-07 13:22:15,229 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=20, num_leaves=63
+2025-10-07 13:28:23,627 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.1, max_depth=20, num_leaves=127
+2025-10-07 13:38:19,009 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=-1, num_leaves=31
+2025-10-07 13:42:32,400 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=-1, num_leaves=63
+2025-10-07 13:48:03,141 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=-1, num_leaves=127
+2025-10-07 13:56:51,934 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=10, num_leaves=31
+2025-10-07 14:01:08,965 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=10, num_leaves=63
+2025-10-07 14:06:50,084 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=10, num_leaves=127
+2025-10-07 14:15:41,699 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=20, num_leaves=31
+2025-10-07 14:20:03,881 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=20, num_leaves=63
+2025-10-07 14:25:57,516 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.15, max_depth=20, num_leaves=127
+2025-10-07 14:36:19,438 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=-1, num_leaves=31
+2025-10-07 14:46:03,640 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=-1, num_leaves=63
+2025-10-07 14:58:49,727 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=-1, num_leaves=127
+2025-10-07 15:19:00,676 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=10, num_leaves=31
+2025-10-07 15:28:32,038 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=10, num_leaves=63
+2025-10-07 15:41:00,272 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=10, num_leaves=127
+2025-10-07 16:00:57,743 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=20, num_leaves=31
+2025-10-07 16:10:20,673 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=20, num_leaves=63
+2025-10-07 16:23:08,330 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.05, max_depth=20, num_leaves=127
+2025-10-07 16:41:08,612 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=-1, num_leaves=31
+2025-10-07 16:48:53,508 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=-1, num_leaves=63
+2025-10-07 16:58:51,065 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=-1, num_leaves=127
+2025-10-07 17:13:34,610 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=10, num_leaves=31
+2025-10-07 17:21:45,354 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=10, num_leaves=63
+2025-10-07 17:31:43,751 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=10, num_leaves=127
+2025-10-07 17:46:54,261 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=20, num_leaves=31
+2025-10-07 17:54:49,741 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=20, num_leaves=63
+2025-10-07 18:04:14,511 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=20, num_leaves=127
+2025-10-07 18:18:11,581 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=-1, num_leaves=31
+2025-10-07 18:24:55,621 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=-1, num_leaves=63
+2025-10-07 18:32:57,297 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=-1, num_leaves=127
+2025-10-07 18:45:47,880 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=10, num_leaves=31
+2025-10-07 18:52:11,559 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=10, num_leaves=63
+2025-10-07 19:00:32,855 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=10, num_leaves=127
+2025-10-07 19:15:26,965 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=20, num_leaves=31
+2025-10-07 19:22:02,461 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=20, num_leaves=63
+2025-10-07 19:30:13,274 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.15, max_depth=20, num_leaves=127
+2025-10-07 19:45:15,270 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=-1, num_leaves=31
+2025-10-07 19:58:54,784 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=-1, num_leaves=63
+2025-10-07 20:16:49,282 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=-1, num_leaves=127
+2025-10-07 20:42:26,588 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=10, num_leaves=31
+2025-10-07 20:55:18,566 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=10, num_leaves=63
+2025-10-07 21:12:41,817 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=10, num_leaves=127
+2025-10-07 21:38:57,251 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=20, num_leaves=31
+2025-10-07 21:51:19,370 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=20, num_leaves=63
+2025-10-07 22:07:45,777 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.05, max_depth=20, num_leaves=127
+2025-10-07 22:31:53,599 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=-1, num_leaves=31
+2025-10-07 22:41:28,630 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=-1, num_leaves=63
+2025-10-07 22:54:38,946 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=-1, num_leaves=127
+2025-10-07 23:14:44,285 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=10, num_leaves=31
+2025-10-07 23:23:54,356 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=10, num_leaves=63
+2025-10-07 23:37:12,127 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=10, num_leaves=127
+2025-10-07 23:58:19,676 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=20, num_leaves=31
+2025-10-08 00:07:31,871 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=20, num_leaves=63
+2025-10-08 00:20:25,571 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.1, max_depth=20, num_leaves=127
+2025-10-08 00:39:49,394 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=-1, num_leaves=31
+2025-10-08 00:48:05,312 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=-1, num_leaves=63
+2025-10-08 00:58:47,495 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=-1, num_leaves=127
+2025-10-08 01:15:46,783 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=10, num_leaves=31
+2025-10-08 01:23:17,075 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=10, num_leaves=63
+2025-10-08 01:32:08,553 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=10, num_leaves=127
+2025-10-08 01:48:26,594 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=20, num_leaves=31
+2025-10-08 01:55:07,986 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=20, num_leaves=63
+2025-10-08 02:03:10,264 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=20, num_leaves=127
+2025-10-08 02:11:28,992 - experiment_fog_classification_basic_features - INFO - Best LightGBM parameters: {'n_estimators': 200, 'learning_rate': 0.05, 'max_depth': 10, 'num_leaves': 127}
+2025-10-08 02:11:28,992 - experiment_fog_classification_basic_features - INFO - Best CV score: 0.9889
+2025-10-08 02:13:47,528 - experiment_fog_classification_basic_features - INFO - Model LightGBM evaluated - Accuracy: 0.9891, F1: 0.7063, AUC: 0.991778407082521
+2025-10-08 02:13:52,850 - experiment_fog_classification_basic_features - INFO - Model LightGBM evaluated - Accuracy: 0.9890, F1: 0.7018, AUC: 0.9911477426631358
+2025-10-08 02:14:04,048 - experiment_fog_classification_basic_features - INFO - Model LightGBM evaluated - Accuracy: 0.9889, F1: 0.7012, AUC: 0.9912884833890913
+2025-10-08 02:14:05,540 - experiment_fog_classification_basic_features - INFO - Confusion matrix plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/plots/LightGBM_confusion_matrix.png
+2025-10-08 02:14:07,763 - experiment_fog_classification_basic_features - INFO - ROC curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/plots/LightGBM_roc_curve.png
+2025-10-08 02:14:09,917 - experiment_fog_classification_basic_features - INFO - PR curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/plots/LightGBM_pr_curve.png
+2025-10-08 02:14:09,930 - experiment_fog_classification_basic_features - INFO - Model LightGBM saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/models/LightGBM_model.pkl
+2025-10-08 02:14:09,931 - experiment_fog_classification_basic_features - INFO - Finished training LightGBM
+2025-10-08 02:14:09,934 - experiment_fog_classification_basic_features - INFO - Results saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/results/results_summary.csv
+2025-10-08 02:14:10,136 - experiment_fog_classification_basic_features - INFO - Model comparison plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/plots/model_comparison_accuracy.png
+2025-10-08 02:14:10,387 - experiment_fog_classification_basic_features - INFO - Model comparison plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/plots/model_comparison_f1.png
+2025-10-08 02:14:10,613 - experiment_fog_classification_basic_features - INFO - Model comparison plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417/plots/model_comparison_auc.png
+2025-10-08 02:14:10,614 - experiment_fog_classification_basic_features - ERROR - Failed to create experiment report: Invalid format specifier
+2025-10-08 02:14:10,615 - experiment_fog_classification_basic_features - INFO - Experiment 'fog_classification_basic_features' finalized
+2025-10-08 02:14:10,615 - experiment_fog_classification_basic_features - INFO - Results available in: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20251007_112417

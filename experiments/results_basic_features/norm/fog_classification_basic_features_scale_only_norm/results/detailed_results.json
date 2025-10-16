@@ -1,0 +1,77 @@
+[
+  {
+    "model_name": "LightGBM",
+    "dataset_split": "train",
+    "timestamp": "2025-10-07T09:25:22.231046",
+    "metrics": {
+      "accuracy": 0.9822997311231462,
+      "precision": 0.6248570631329573,
+      "recall": 0.25353135093736473,
+      "f1": 0.3607079802538698,
+      "auc": 0.9627208315940867,
+      "confusion_matrix": [
+        [
+          22352034,
+          68566
+        ],
+        [
+          336258,
+          114207
+        ]
+      ]
+    },
+    "n_samples": 22871065,
+    "n_positive": 450465,
+    "n_negative": 22420600
+  },
+  {
+    "model_name": "LightGBM",
+    "dataset_split": "validation",
+    "timestamp": "2025-10-07T09:25:26.838272",
+    "metrics": {
+      "accuracy": 0.9822470881876292,
+      "precision": 0.6222932881251445,
+      "recall": 0.2509789905519642,
+      "f1": 0.35769494828693554,
+      "auc": 0.9624146138266445,
+      "confusion_matrix": [
+        [
+          3193140,
+          9803
+        ],
+        [
+          48201,
+          16151
+        ]
+      ]
+    },
+    "n_samples": 3267295,
+    "n_positive": 64352,
+    "n_negative": 3202943
+  },
+  {
+    "model_name": "LightGBM",
+    "dataset_split": "test",
+    "timestamp": "2025-10-07T09:25:35.824654",
+    "metrics": {
+      "accuracy": 0.9822793778951702,
+      "precision": 0.6241559091171435,
+      "recall": 0.25207452759820986,
+      "f1": 0.35911513534754236,
+      "auc": 0.9623948164652155,
+      "confusion_matrix": [
+        [
+          6386350,
+          19536
+        ],
+        [
+          96261,
+          32443
+        ]
+      ]
+    },
+    "n_samples": 6534590,
+    "n_positive": 128704,
+    "n_negative": 6405886
+  }
+]

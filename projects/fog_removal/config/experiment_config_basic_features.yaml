@@ -1,0 +1,107 @@
+# Example Configuration: Using Only Basic Gaussian Features
+# This config demonstrates manual feature selection with core 3D Gaussian properties
+
+# Dataset Configuration  
+dataset:
+  data_directory: "/home/tsy/Documents/TeamM_Defog/kpro-dehaze/data/csv/train/dataset_original"
+  cache_directory: "cache"
+  file_pattern: "*.csv"
+  recursive_search: true
+  
+  splitting:
+    strategy: "combined"
+    test_size: 0.2
+    validation_size: 0.1
+    random_state: 42
+    cv_folds: 5
+    cv_strategy: "stratified"
+    
+  # Manual Feature Selection - Only Basic Gaussian Properties
+  features:
+    selection_mode: "manual"
+    manual_features: [
+      # Core Gaussian properties only
+      "f_dc_0", "f_dc_1", "f_dc_2",       # Spherical harmonics (color information)
+      "scale_x", "scale_y", "scale_z",    # Scale parameters
+      "opacity"                           # Opacity value
+    ]
+    
+  preprocessing:
+    normalize_features: false
+    handle_missing: "drop"
+    feature_selection_validation: true
+
+# Experiment Configuration
+experiment:
+  name: "fog_classification_basic_features"
+  description: "Classification using only basic Gaussian properties"
+  output_directory: "experiments"
+  methods: ["lightgbm"]
+  
+  evaluation:
+    metrics: ["accuracy", "precision", "recall", "f1", "auc"]
+    cross_validate: true
+
+# Model Configurations
+models:
+  svm:
+    enabled: false
+    hyperparameters:
+      kernel: ["rbf", "linear"]
+      C: [0.1, 1.0, 10.0]
+      gamma: ["scale", "auto"]
+    
+  lightgbm:
+    enabled: true
+    hyperparameters:
+      n_estimators: [100, 200, 300]
+      learning_rate: [0.05, 0.1, 0.15]
+      max_depth: [-1, 10, 20]
+      num_leaves: [31, 63, 127]
+      subsample: [0.8, 0.9, 1.0]
+      colsample_bytree: [0.8, 0.9, 1.0]
+      
+  deep_learning:
+    enabled: false
+    
+    # Training configuration
+    training:
+      epochs: 500
+      batch_size: 2048
+      learning_rate: 0.0012
+      weight_decay: 1e-4
+      optimizer: "adam"
+      scheduler: "reduce_on_plateau"
+      patience: 75
+      min_delta: 1e-4
+      
+    # Model architectures
+    architectures:
+      mlp:
+        enabled: true
+        hidden_layers: [784, 392, 256, 128, 32]
+        dropout: 0.2
+        activation: "selu"
+        
+      transformer:
+        enabled: true
+        d_model: 256
+        nhead: 8
+        num_layers: 4
+        dim_feedforward: 512
+        dropout: 0.1
+      
+      lstm:
+        enabled: false
+      cnn1d:
+        enabled: false
+
+# Hardware
+hardware:
+  device: "auto"
+  num_workers: 2
+
+# Logging
+logging:
+  level: "INFO"
+  save_plots: true

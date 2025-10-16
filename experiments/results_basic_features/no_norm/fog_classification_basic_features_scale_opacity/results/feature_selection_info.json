@@ -1,0 +1,19 @@
+{
+  "selected_features": [
+    "scale_x",
+    "scale_y",
+    "scale_z",
+    "opacity"
+  ],
+  "feature_count": 4,
+  "feature_scores": null,
+  "selection_config": {
+    "selection_mode": "manual",
+    "manual_features": [
+      "scale_x",
+      "scale_y",
+      "scale_z",
+      "opacity"
+    ]
+  }
+}

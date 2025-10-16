@@ -1,0 +1,177 @@
+[
+  {
+    "model_name": "LightGBM",
+    "dataset_split": "train",
+    "timestamp": "2025-09-20T16:12:41.246242",
+    "metrics": {
+      "accuracy": 0.9982039663615585,
+      "precision": 0.9422092902044498,
+      "recall": 0.9230017870422785,
+      "f1": 0.9325066414577229,
+      "auc": 0.9994911702506788,
+      "confusion_matrix": [
+        [
+          33035098,
+          25502
+        ],
+        [
+          34685,
+          415780
+        ]
+      ]
+    },
+    "n_samples": 33511065,
+    "n_positive": 450465,
+    "n_negative": 33060600
+  },
+  {
+    "model_name": "LightGBM",
+    "dataset_split": "validation",
+    "timestamp": "2025-09-20T16:12:46.249640",
+    "metrics": {
+      "accuracy": 0.9981125040341153,
+      "precision": 0.938084075141762,
+      "recall": 0.9203288165091994,
+      "f1": 0.9291216290416202,
+      "auc": 0.9993464823991403,
+      "confusion_matrix": [
+        [
+          4719034,
+          3909
+        ],
+        [
+          5127,
+          59225
+        ]
+      ]
+    },
+    "n_samples": 4787295,
+    "n_positive": 64352,
+    "n_negative": 4722943
+  },
+  {
+    "model_name": "LightGBM",
+    "dataset_split": "test",
+    "timestamp": "2025-09-20T16:12:56.134744",
+    "metrics": {
+      "accuracy": 0.9981268127408066,
+      "precision": 0.9393816788442774,
+      "recall": 0.9200180258577823,
+      "f1": 0.929599026515672,
+      "auc": 0.9993149169807354,
+      "confusion_matrix": [
+        [
+          9438245,
+          7641
+        ],
+        [
+          10294,
+          118410
+        ]
+      ]
+    },
+    "n_samples": 9574590,
+    "n_positive": 128704,
+    "n_negative": 9445886
+  },
+  {
+    "model_name": "DL_MLP",
+    "dataset_split": "train",
+    "timestamp": "2025-09-21T03:07:58.334463",
+    "metrics": {
+      "accuracy": 0.9971652049852787,
+      "precision": 0.927417803343658,
+      "recall": 0.8561153474742765,
+      "f1": 0.8903413032712799,
+      "auc": 0.4998541352515874,
+      "confusion_matrix": [
+        [
+          33030418,
+          30182
+        ],
+        [
+          64815,
+          385650
+        ]
+      ]
+    },
+    "n_samples": 33511065,
+    "n_positive": 450465,
+    "n_negative": 33060600
+  },
+  {
+    "model_name": "DL_MLP",
+    "dataset_split": "test",
+    "timestamp": "2025-09-21T03:08:53.901368",
+    "metrics": {
+      "accuracy": 0.9971688604942874,
+      "precision": 0.9277444235805287,
+      "recall": 0.8560573097961214,
+      "f1": 0.8904603920586108,
+      "auc": 0.9986953666355014,
+      "confusion_matrix": [
+        [
+          9437305,
+          8581
+        ],
+        [
+          18526,
+          110178
+        ]
+      ]
+    },
+    "n_samples": 9574590,
+    "n_positive": 128704,
+    "n_negative": 9445886
+  },
+  {
+    "model_name": "DL_TRANSFORMER",
+    "dataset_split": "train",
+    "timestamp": "2025-09-21T08:12:48.603387",
+    "metrics": {
+      "accuracy": 0.9865577235459392,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": NaN,
+      "confusion_matrix": [
+        [
+          33060600,
+          0
+        ],
+        [
+          450465,
+          0
+        ]
+      ]
+    },
+    "n_samples": 33511065,
+    "n_positive": 450465,
+    "n_negative": 33060600
+  },
+  {
+    "model_name": "DL_TRANSFORMER",
+    "dataset_split": "test",
+    "timestamp": "2025-09-21T08:13:58.580626",
+    "metrics": {
+      "accuracy": 0.986557753386829,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": NaN,
+      "confusion_matrix": [
+        [
+          9445886,
+          0
+        ],
+        [
+          128704,
+          0
+        ]
+      ]
+    },
+    "n_samples": 9574590,
+    "n_positive": 128704,
+    "n_negative": 9445886
+  }
+]

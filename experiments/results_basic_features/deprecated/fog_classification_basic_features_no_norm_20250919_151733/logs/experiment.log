@@ -1,0 +1,52 @@
+2025-09-19 15:17:33,117 - experiment_fog_classification_basic_features - INFO - Experiment 'fog_classification_basic_features' initialized
+2025-09-19 15:17:33,117 - experiment_fog_classification_basic_features - INFO - Experiment directory: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733
+2025-09-19 15:17:33,117 - experiment_fog_classification_basic_features - INFO - 🚀 Starting Multi-Dataset Fog Gaussian Classification Experiment
+2025-09-19 15:17:33,117 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-09-19 15:17:33,117 - experiment_fog_classification_basic_features - INFO - DATASET PREPARATION
+2025-09-19 15:17:33,117 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-09-19 15:18:27,607 - experiment_fog_classification_basic_features - INFO - Dataset info logged: 244 datasets
+2025-09-19 15:18:27,860 - experiment_fog_classification_basic_features - INFO - Feature selection mode: manual
+2025-09-19 15:18:27,860 - experiment_fog_classification_basic_features - INFO - Using manual feature selection: 7 features specified
+2025-09-19 15:18:27,860 - experiment_fog_classification_basic_features - INFO - Feature validation: 7 valid, 0 missing
+2025-09-19 15:18:27,860 - experiment_fog_classification_basic_features - INFO - Selected 7 features: ['f_dc_0', 'f_dc_1', 'f_dc_2', 'scale_x', 'scale_y', 'scale_z', 'opacity']...
+2025-09-19 15:18:27,861 - experiment_fog_classification_basic_features - INFO - Feature selection info saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/results/feature_selection_info.json
+2025-09-19 15:18:28,171 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-09-19 15:18:28,171 - experiment_fog_classification_basic_features - INFO - LIGHTGBM CLASSIFICATION
+2025-09-19 15:18:28,171 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-09-19 15:18:28,171 - experiment_fog_classification_basic_features - INFO - Started training LightGBM
+2025-09-19 15:18:28,171 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=100, learning_rate=0.05, max_depth=-1, num_leaves=31
+2025-09-19 15:20:04,585 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=200, learning_rate=0.1, max_depth=10, num_leaves=63
+2025-09-19 15:24:32,234 - experiment_fog_classification_basic_features - INFO - Current params: n_estimators=300, learning_rate=0.15, max_depth=20, num_leaves=127
+2025-09-19 15:32:32,565 - experiment_fog_classification_basic_features - INFO - Best LightGBM parameters: {'n_estimators': 200, 'learning_rate': 0.1, 'max_depth': 10, 'num_leaves': 63}
+2025-09-19 15:32:32,565 - experiment_fog_classification_basic_features - INFO - Best CV score: 0.9886
+2025-09-19 15:34:05,025 - experiment_fog_classification_basic_features - INFO - Model LightGBM evaluated - Accuracy: 0.9888, F1: 0.6977, AUC: 0.9911956324920432
+2025-09-19 15:34:09,888 - experiment_fog_classification_basic_features - INFO - Model LightGBM evaluated - Accuracy: 0.9887, F1: 0.6934, AUC: 0.990654808325027
+2025-09-19 15:34:19,459 - experiment_fog_classification_basic_features - INFO - Model LightGBM evaluated - Accuracy: 0.9887, F1: 0.6929, AUC: 0.9907795252311526
+2025-09-19 15:34:21,011 - experiment_fog_classification_basic_features - INFO - Confusion matrix plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/LightGBM_confusion_matrix.png
+2025-09-19 15:34:24,094 - experiment_fog_classification_basic_features - INFO - ROC curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/LightGBM_roc_curve.png
+2025-09-19 15:34:26,771 - experiment_fog_classification_basic_features - INFO - PR curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/LightGBM_pr_curve.png
+2025-09-19 15:34:26,787 - experiment_fog_classification_basic_features - INFO - Model LightGBM saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/models/LightGBM_model.pkl
+2025-09-19 15:34:26,787 - experiment_fog_classification_basic_features - INFO - Finished training LightGBM
+2025-09-19 15:34:26,787 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-09-19 15:34:26,787 - experiment_fog_classification_basic_features - INFO - DEEP LEARNING CLASSIFICATION
+2025-09-19 15:34:26,787 - experiment_fog_classification_basic_features - INFO - ============================================================
+2025-09-19 15:34:26,894 - experiment_fog_classification_basic_features - INFO - Training DL_MLP...
+2025-09-19 15:34:26,894 - experiment_fog_classification_basic_features - INFO - Started training DL_MLP
+2025-09-19 23:11:11,242 - experiment_fog_classification_basic_features - INFO - Model DL_MLP evaluated - Accuracy: 0.9882, F1: 0.6344, AUC: 0.5002331300023437
+2025-09-19 23:12:07,226 - experiment_fog_classification_basic_features - INFO - Model DL_MLP evaluated - Accuracy: 0.9882, F1: 0.6345, AUC: 0.9901526259623297
+2025-09-19 23:12:09,227 - experiment_fog_classification_basic_features - INFO - Confusion matrix plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_MLP_confusion_matrix.png
+2025-09-19 23:12:12,505 - experiment_fog_classification_basic_features - INFO - ROC curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_MLP_roc_curve.png
+2025-09-19 23:12:14,472 - experiment_fog_classification_basic_features - INFO - PR curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_MLP_pr_curve.png
+2025-09-19 23:12:14,737 - experiment_fog_classification_basic_features - INFO - Training history plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_MLP_training_history.png
+2025-09-19 23:12:14,739 - experiment_fog_classification_basic_features - INFO - Model DL_MLP saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/models/DL_MLP_model.pkl
+2025-09-19 23:12:14,739 - experiment_fog_classification_basic_features - INFO - Finished training DL_MLP
+2025-09-19 23:12:14,739 - experiment_fog_classification_basic_features - INFO - Training DL_TRANSFORMER...
+2025-09-19 23:12:14,739 - experiment_fog_classification_basic_features - INFO - Started training DL_TRANSFORMER
+2025-09-20 18:46:41,610 - experiment_fog_classification_basic_features - INFO - Model DL_TRANSFORMER evaluated - Accuracy: 0.9891, F1: 0.6746, AUC: 0.49994893203706364
+2025-09-20 18:47:41,906 - experiment_fog_classification_basic_features - INFO - Model DL_TRANSFORMER evaluated - Accuracy: 0.9891, F1: 0.6739, AUC: 0.9917098119800242
+2025-09-20 18:47:43,974 - experiment_fog_classification_basic_features - INFO - Confusion matrix plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_TRANSFORMER_confusion_matrix.png
+2025-09-20 18:47:47,316 - experiment_fog_classification_basic_features - INFO - ROC curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_TRANSFORMER_roc_curve.png
+2025-09-20 18:47:49,213 - experiment_fog_classification_basic_features - INFO - PR curve plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_TRANSFORMER_pr_curve.png
+2025-09-20 18:47:49,524 - experiment_fog_classification_basic_features - INFO - Training history plot saved: /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/plots/DL_TRANSFORMER_training_history.png
+2025-09-20 18:47:49,536 - experiment_fog_classification_basic_features - INFO - Model DL_TRANSFORMER saved to /home/tsy/Documents/TeamM_Defog/kpro-dehaze/experiments/fog_classification_basic_features_20250919_151733/models/DL_TRANSFORMER_model.pkl
+2025-09-20 18:47:49,536 - experiment_fog_classification_basic_features - INFO - Finished training DL_TRANSFORMER
