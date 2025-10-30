@@ -1,4 +1,4 @@
-# 3D Fog Removal Using LightGBM and Gaussian Splatting
+# LightDefogGS: Lightweight 3D Fog Removal through Gaussian Splatting and Gradient-Boosted Filtering
 
 ## 🧩 Overview
 This project focuses on **3D fog removal** by leveraging **LightGBM** to classify fog-related Gaussians within **Gaussian Splat representations**.  
