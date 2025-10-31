@@ -1,2 +1,0 @@
-model_name,accuracy,precision,recall,f1_score,auc,n_samples,n_positive,n_negative
-LightGBM,0.9803041965907578,0.0,0.0,0.0,0.7904633412923696,6534590,128704,6405886
