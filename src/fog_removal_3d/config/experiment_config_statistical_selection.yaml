@@ -1,0 +1,124 @@
+# Example Configuration: Statistical Feature Selection
+# This config demonstrates automatic feature selection using statistical methods
+
+# Dataset Configuration  
+dataset:
+  data_directory: "data"
+  cache_directory: "cache"
+  file_pattern: "*.csv"
+  recursive_search: true
+  
+  splitting:
+    strategy: "combined"
+    test_size: 0.2
+    validation_size: 0.1
+    random_state: 42
+    
+  # Statistical Feature Selection
+  features:
+    selection_mode: "statistical"
+    
+    # Statistical feature selection configuration
+    statistical_selection:
+      method: "mutual_info"  # Options: "mutual_info", "chi2", "f_classif", "variance", "random_forest"
+      k_best: 15  # Select top 15 features
+      threshold: 0.01  # Minimum score threshold
+      
+    # These features will always be excluded regardless of statistical scores
+    exclude_features: [
+      "beta", "alpha", "is_fog", "id", "source_dataset",  # Target and metadata
+      "pos_x", "pos_y", "pos_z",  # Spatial coordinates for generalization
+      "rot_0", "rot_1", "rot_2", "rot_3"  # Rotation (often noisy)
+    ]
+      
+  preprocessing:
+    normalize_features: true
+    handle_missing: "drop"
+    feature_selection_validation: true
+
+# Experiment Configuration
+experiment:
+  name: "fog_classification_statistical_selection"
+  description: "Classification using statistically selected features (mutual information)"
+  output_directory: "experiments"
+  methods: ["svm", "lightgbm", "deep_learning"]
+  
+  evaluation:
+    metrics: ["accuracy", "precision", "recall", "f1", "auc"]
+    cross_validate: true
+
+# Model Configurations
+models:
+  svm:
+    enabled: true
+    hyperparameters:
+      kernel: ["rbf", "linear"]
+      C: [0.1, 1.0, 10.0]
+      gamma: ["scale", "auto"]
+      
+  lightgbm:
+    enabled: true
+    hyperparameters:
+      n_estimators: [100, 200, 300]
+      learning_rate: [0.05, 0.1, 0.15]
+      max_depth: [-1, 10, 20]
+      num_leaves: [31, 63]
+      
+  deep_learning:
+    enabled: true
+    training:
+      epochs: 1000
+      batch_size: 1024
+      learning_rate: 0.001
+      patience: 50
+      
+    architectures:
+      mlp:
+        enabled: true
+        hidden_layers: [512, 256, 128, 64]
+        dropout: 0.3
+        
+      transformer:
+        enabled: true
+        d_model: 256
+        nhead: 8
+        num_layers: 3
+        
+      cnn1d:
+        enabled: true
+        channels: [64, 128, 64]
+        kernel_sizes: [3, 3, 3]
+        
+      lstm:
+        enabled: true
+        hidden_size: 256
+        num_layers: 2
+        bidirectional: true
+        
+      attention:
+        enabled: true
+        hidden_size: 128
+        num_heads: 4
+        num_layers: 2
+        
+      resnet:
+        enabled: true
+        hidden_layers: [256, 128, 64]
+        num_blocks: 2
+
+# Hardware
+hardware:
+  device: "auto"
+  mixed_precision: false
+  num_workers: 4
+
+# Logging
+logging:
+  level: "INFO"
+  save_plots: true
+  
+# Results
+results:
+  save_models: true
+  save_best_only: true
+  create_report: true
