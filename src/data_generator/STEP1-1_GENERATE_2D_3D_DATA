@@ -1,0 +1,4 @@
+STEP1-1_GENERATE_DATA:
+- download_datasets: you can download tandt_db dataset via bash (in local environment)
+- foggy_image_generator: you can generate foggy images with asm (in colab notebook)
+- foggy_pointclouds_generator: you can generate foggy point clouds using 3DGS or WildGaussians after setting environment (in local environment)
