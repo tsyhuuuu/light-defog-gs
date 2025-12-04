@@ -1,0 +1,3 @@
+STEP2_REMOVE_3D_FOG
+- scripts: core scripts for LightDefogGS, you can use LightGBM, MLP, CNN, LSTM or Transformer for 3D fog removal
+- tutorials: you can read this to learn how to use this project
