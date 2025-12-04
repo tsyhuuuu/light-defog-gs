@@ -1,2 +1,0 @@
-STEP1-2_REMOVE_2D_FOG:
-- foggy_image_generator: you can generate defogged images with dcp, he and clahe (in colab notebook)
